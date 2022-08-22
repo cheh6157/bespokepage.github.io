@@ -1,0 +1,24 @@
+@mixin  ellip($line-height:1, $lines:1){
+    // defaults
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    @if($lines > 1){ //1줄이상일때
+        line-height: $line-height;
+        max-height: $line-height * $lines;
+        display: -webkit-box;
+        -webkit-line-clamp: $lines;
+        -webkit-box-orient: vertical; /* autoprefixer: off */
+    }
+    @else{ //1줄일때
+        white-space: nowrap;
+    }
+    
+}
+// 믹스인은 여러가지 소스를 한번에 제어하기 위해 사용한다, 가로안에 바꾸고자하는내용 디폴트값 ,내용에 이름 넣어주고 home.scss에 값만 입력해주다.
+//  @mixin box($color,$width, $height:50px) {
+//      display: block;
+//      width: $width;
+//      height: $height;
+//      background: $color;
+// }

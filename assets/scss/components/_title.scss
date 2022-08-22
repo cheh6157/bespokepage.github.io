@@ -1,0 +1,35 @@
+.title-area{
+    display: flex;
+    justify-content: space-between;
+    .column-left{
+        max-width: 30%;
+        .text{
+            font-size:calc(max(1.4vw, 20px));
+            line-height: 1.15;
+        }
+    }
+   
+    .column-right{
+        max-width: 60%;
+        .text-box{
+    
+            text-align-last: left;
+        }
+        .text-box .title{
+            font-size:calc(max(4vw, 40px));
+        }
+    }
+    .sc-slide &{
+        .title{
+            font-size:calc(max(4vw, 40px));
+        }
+    }
+    // result: .sc-slide .title-area
+    .sc-life &{
+        .title{
+            width: 60%;
+            font-size:calc(max(4vw, 40px));
+        }
+    }
+}
+

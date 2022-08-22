@@ -1,0 +1,59 @@
+/* header */
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 37px 77px;
+    width: 100%;
+    z-index: 10;
+}
+.group-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.group-flex .logo{
+    width: 132px;height: 24px;
+    background: url(/assets/images/logo/logo.webp) no-repeat;
+    background-size: contain;
+}
+.group-flex .logo a{
+    display: block;
+    height: 100%;
+}
+.gnb-area{font-size: 20px;color: #fff;}
+.gnb-area .gnb-list{display: flex;}
+.gnb-area .gnb-item + .gnb-item{margin-left: 50px;}
+.order-area{
+    display: flex;
+    align-items: center;
+}
+.order-area .link-order{
+    position: relative;
+    color: #ffffff;
+    padding: 17px 41px 19px;
+    border-radius: 2.2vw;
+    opacity: 1;
+    transform: translateZ(0);
+    transition: 0.6s
+}
+.order-area .link-order:hover{
+    background: #fff;
+    color: #000;
+    transition: 0.6s;
+}
+.order-area .link-order::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #ffffff;
+    border-radius: 4vw;
+    opacity: 0.15;
+    transition: 0.6s;
+}
+.order-area .link-order .txt{
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+}
