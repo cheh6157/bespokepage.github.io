@@ -1,0 +1,164 @@
+/* footer */
+.footer{
+    margin-top: 6.875rem;
+    border-top: 1px solid #D8D8D8;
+    padding-top: 6.875rem;
+    .row-top{
+        display: flex;
+        justify-content: space-between;
+        justify-content: flex-start;
+        .flogo-area{
+            width: 20%;
+        }
+         .logo{
+            font-size: 40px;
+            margin-bottom: 2rem;
+            span{font-weight: bold;}
+        }
+         .desc{
+            font-size: calc(max(1.4vw, 20px));
+            line-height: 1.4285714286;
+            color: #8E9194;
+        }
+    }
+}
+
+ .util-area{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2.5rem;
+    &>*+*{
+        margin-left: 30px;
+    }
+    .util-box .title{
+        display: block;
+        margin-bottom: 1.125rem;
+        font-size: calc(max(1.4vw, 20px));
+        line-height: 1.4285714286;
+    }
+    .util-box .util-item{
+        font-size: calc(max(1.4vw, 20px));
+        line-height: 1.4285714286;
+        color: #8E9194;
+    }
+    .util-box .util-item .link-more{
+        line-height: 1.619047619;
+    }
+}
+
+.row-top .letter-area{
+    width: 38%;
+    padding-left: 5%;
+    fieldset{
+        position: relative;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        padding: 1rem 2rem;
+        height: 3.625rem;
+        border-radius: 0.5rem;
+        border: 1px solid #D8D8D8;
+        font-size: calc(max(1.4vw, 20px));
+    }
+     .btn-email{
+        position: absolute;
+        right: -2%;
+        bottom: 5%;
+        padding: 1.25rem 2rem;
+        height: 3.625rem;
+        border-radius: 0.5rem;
+        font-size: calc(max(1.4vw, 20px));
+        outline: none;
+        border: 0;
+        background: none;
+        font-family: inherit;
+    }
+     .btn-email span{
+        display: block;
+        align-items: center;
+        font-size: calc(max(1.4vw, 20px));
+    }
+     .txt{
+        font-size: calc(max(1.1vw, 14px));
+        line-height: 1.375;
+        color: #A7AAAD;
+    }
+
+}
+
+.footer .row-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8.75rem;
+    border-top: 1px solid #D8D8D8;
+    padding: 2.375rem 0;
+}
+.row-bottom .column-left{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    .lang-area{position: relative;}
+    .lang-area::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0.6rem;
+    margin-top: -0.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url(/assets/images/img/flag.png) no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    }
+    .lang-area::after{
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        margin-top: -0.3rem;
+        width: 0.9rem;
+        height: 0.9rem;
+        background: url(/assets/images/icon/arrow.svg) no-repeat;
+        background-size: contain;
+        z-index: 1;
+        }
+    select{
+        padding: 0.8rem 2.25rem 0.8rem 2.75rem;
+        border-radius: 0.4375rem;
+        border: 1px solid #D8D8D8;
+        font-size: calc(max(1.4vw, 20px));
+        color: #000000;
+        outline: none;
+    }
+    .icon-area{
+        margin-left: 10%;
+    }
+    .icon-list{
+        display: flex;
+        .icon-item{
+            padding: 0 10px;
+        }
+    }
+}
+
+.row-bottom .column-right{
+    width: 57%;
+}
+.column-right .policy-area{}
+.column-right .policy-list{
+    display: flex;
+    color: #8E9194;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 100%;
+    font-size: calc(max(1.2vw, 19px));
+    line-height: 1.4210526316;
+}
+.column-right .policy-item{
+    margin: 1rem  1.5rem;
+}
+.column-right .policy-item:last-child{
+    margin-right: 0;
+}
