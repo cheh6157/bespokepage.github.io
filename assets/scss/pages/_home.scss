@@ -1,0 +1,300 @@
+
+.container{position: relative;}
+.sc-visual{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .text-area{
+        position: absolute;top: 15%;left: 5%; color: #fff;
+        .title{font-size:calc(max(4vw, 40px));}
+    }
+    
+
+}
+.logo-area .logo{
+    min-width: 1400px;
+    position: absolute;
+    bottom: -60px;
+    left: 3%;
+    .text{
+    font-family:'samsungone';
+    width: 100%;
+    height: auto;
+    color: #fff;
+    font-size: 330px;
+    font-weight: lighter;
+    .bod{
+        display: inline-block;
+        font-weight: 900;
+        }
+    }
+}
+.sc-slide{
+    margin-top: 7.1875rem;
+    .title-area{
+        display: flex;
+        justify-content: space-between;
+    }
+    .swiper{
+        margin: 50px 0;
+        padding: 0 77px;
+        .swiper-slide{
+            img{
+                width: 100%;
+                border-radius: 0.5rem;
+            }
+        } 
+    }
+    .group-desc{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .desc-area{
+        max-width: 50%;
+        &>*+*{
+            margin-top: 4.375rem;
+        }
+    }
+   
+}
+
+.column-left{
+    .text{
+        
+        font-size:calc(max(22px, 20px));
+        line-height: 1.15;
+    }
+}
+
+.column-right{
+    .text-box{
+
+        text-align-last: left;
+    }
+    .title{
+        
+        font-size:calc(max(4vw, 40px));
+    }
+    .link.link-mail{
+        border-bottom: 1px solid #000
+    } 
+}
+
+
+
+
+
+.sc-product{
+    margin-top: 20.1875rem;
+    margin-bottom: 17.375rem;
+     .product-area{
+        margin-top: 5.125rem;
+    }
+    .product-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        // 얼라인 아이템 플렉스는 flex 사용시 늘어난 곳을 위로 올려주기 위해 사용한다.
+        .link-prd{
+            width: calc(60% - 10px);
+            .img-box{
+                @extend .img-scrolling;
+            }
+        }
+        &>.img-box{
+            width: calc(40% - 10px);
+            padding-bottom: calc(40% - 10px);
+            @extend .img-scrolling;
+        }
+        
+         .name{
+            display: inline-block;
+            margin-right: 1.4375rem;
+            box-sizing: border-box;
+            margin-top: 2rem;
+            font-size:calc(max(2.5vw, 30px));
+        }
+         .price{
+            font-size:calc(max(1.4vw, 20px));
+            line-height: 1.4285714286;
+            color: #8E9194;
+        }
+    }
+    
+}
+
+
+
+
+
+.sc-life{
+    margin-top: 17.375rem;
+    margin-bottom: 15.125rem;
+    .info-area{margin-top: 300px;}
+
+    .info-item{
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        &:not(.active){
+            .img-box{
+                visibility: hidden;opacity: 0;
+                transform: translateY(-40%);
+            }
+            .info-box{opacity: 0.5;}
+        }
+    }
+    .img-box{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        transition: 0.4s, transform 0.4s;
+        overflow: hidden;
+        border-radius: 5px;
+        width: 30%;
+        .thumb{
+            width: 100%;
+            background-size: cover;
+            display: block;
+            padding-bottom: 70%;
+            @extend .img-scrolling;
+        }
+    }
+    .info-box{
+        width: 60%;
+        padding: 2.5rem 0;
+        border-bottom: 1px solid #000;
+        transition: opacity 0.5s;
+        .num{
+            display: inline-block;
+             font-size:calc(max(1.4vw, 20px));
+            margin-right: 70px;
+            }
+        .text{
+             display: inline-block;
+             font-size:calc(max(2.5vw, 30px));
+             }    
+    }
+
+
+    // .info-area{
+    // .info-list{}
+    // .info-item{
+    //     display: flex;
+    //     padding: 2.5rem 0;
+    //     border-bottom: 1px solid #000;
+    //     align-items: center;
+    //     .num{
+    //         display: inline-block;
+    //         font-size:calc(max(1.4vw, 20px));
+    //         margin-right: 70px;
+    //     }
+        
+    // }
+       
+    // }
+    
+}
+
+
+
+ 
+.sc-app{
+    padding: 0 1.125rem;
+    .app-inner{
+        padding: 11.375rem 3.875rem;
+        background: #4B514D;
+        color: #ffffff;
+        border-radius: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .text-area{
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 40%;
+        height: 100vh;
+        padding-top: 5%;
+    }
+    .text-area .t-title{
+        font-size:calc(max(4vw, 40px));
+    }
+    .desc-box{
+        display: none;
+        position: absolute;
+        left: 0;
+        bottom: 20%;
+        .title{
+            margin-bottom: 1.125rem;
+            font-size:calc(max(1.4vw, 20px));
+        }
+        .desc{
+            font-size:calc(max(1.4vw, 20px));
+            line-height: 1.43;
+            color: #8E9194;
+        }
+    }
+    .desc-box.active{display: block;}
+    .group-img{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        .img-list{
+            width: 100%;
+            padding: 0 10%;
+            &>*+*{
+                margin-top: 20px;
+            }
+            img{
+                width: 100%;
+            }
+        }
+       
+    }
+}
+
+
+
+.sc-vision{
+    margin-top: 11.125rem;
+    margin-bottom: 6.875rem;
+    display: flex;
+
+    .img-box{
+        width: 40%;
+        padding-bottom: 10%;
+        .img-box img{
+            width: 100%;
+        }
+    }
+    .text-area{
+        width: 60%;
+        padding-left: 10%;
+    }
+    .text-area .t-title{
+        font-size:calc(max(4vw, 40px));
+    }
+    .desc-box{
+        margin-top: 300px;
+    }
+    .desc-box .title{
+        margin-bottom: 1.125rem;
+        font-size:calc(max(1.4vw, 20px));
+    }
+    .desc-box .desc{
+        font-size:calc(max(1.4vw, 20px));
+        line-height: 1.4285714286;
+        color: #8E9194;
+        margin-bottom: 2.6875rem;
+        box-sizing: border-box;
+        padding-right: 50px;
+    }
+}
+
